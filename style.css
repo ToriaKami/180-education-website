@@ -50,7 +50,7 @@ nav {
 }
 
 .logo img {
-    height: 35px; /* You can adjust this value to make the logo bigger or smaller */
+    height: 40px; /* You can adjust this value to make the logo bigger or smaller */
     width: auto; /* This keeps the logo's proportions correct */
     vertical-align: middle; /* This helps align it nicely with the text links */
 }
