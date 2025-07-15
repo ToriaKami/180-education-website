@@ -645,3 +645,26 @@ footer p {
 .faq-item.active .faq-toggle {
     transform: rotate(45deg); /* Rotates the "+" into an "x" */
 }
+
+/* --- Final CTA Section --- */
+.final-cta {
+    background-color: var(--dark-grey); /* Using the dark grey from the footer for a smooth transition */
+    color: var(--white-color);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.final-cta h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.final-cta p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto 2rem auto; /* Centers the paragraph block */
+    line-height: 1.7;
+}
+
+/* The .cta-button style we wrote earlier will automatically apply here! */
