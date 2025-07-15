@@ -1,9 +1,10 @@
 /* --- Global Styles & Variables --- */
+/* --- Global Styles & Variables --- */
 :root {
-    --primary-color: #005A9C; /* A professional blue */
-    --secondary-color: #FDB813; /* A warm, optimistic yellow/gold */
-    --dark-grey: #333333;
-    --light-grey: #f4f4f4;
+    --primary-color: #4a6a8a;    /* This is your new muted blue */
+    --secondary-color: #e8a838; /* This is your new mustard yellow */
+    --dark-grey: #333333;       /* This is your main text color */
+    --light-grey: #f5f5f7;    /* This is your new off-white background */
     --white-color: #ffffff;
     --body-font: 'Poppins', sans-serif;
 }
