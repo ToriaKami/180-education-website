@@ -152,17 +152,120 @@ nav {
     margin-top: 0;
 }
 
-/* --- Footer --- */
+/* --- Footer Redesign --- */
 footer {
-    background: var(--dark-grey);
-    color: var(--white-color);
-    text-align: center;
-    padding: 2rem;
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+    padding: 4rem 2rem 1rem;
 }
 
-footer p {
-    margin: 0.2rem 0; /* We reduced the top/bottom margin for tighter spacing */
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* 3 columns: first one is twice as wide */
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.footer-col h4 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+/* Adds the little accent line under the headings */
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-col ul li a {
+    color: var(--light-grey);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-logo img {
+    height: 45px;
+}
+
+.tagline {
     font-weight: 300;
+    max-width: 300px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--light-grey);
+    transition: fill 0.3s ease;
+}
+
+.social-icons a:hover svg {
+    fill: var(--secondary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 300;
+}
+
+/* --- Responsiveness for the new footer --- */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Stacks all columns on mobile */
+        text-align: center;
+    }
+    .footer-col h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer-logo {
+        justify-content: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
 }
 
 /* --- Mobile Responsiveness --- */
