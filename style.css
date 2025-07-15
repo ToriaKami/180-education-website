@@ -494,11 +494,11 @@ footer p {
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.05); /* The "glassy" effect */
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 12px;
-    text-align: left;
+    text-align: center; /* <<< THIS LINE IS UPDATED */
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
@@ -507,10 +507,10 @@ footer p {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.service-card .card-icon {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+.service-card .card-icon svg {
+    width: 56px;   /* <<< UPDATED: Made the icon bigger */
+    height: 56px;  /* <<< UPDATED: Made the icon bigger */
+    stroke: var(--secondary-color); /* <<< UPDATED: Changed color to mustard */
 }
 
 .service-card h3 {
