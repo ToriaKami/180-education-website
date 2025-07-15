@@ -474,7 +474,7 @@ footer p {
 
 /* --- Services Redesign Section --- */
 .services-redesign {
-    background-color: #0F0F1A; /* A very dark blue background */
+    background-color: #25384C; /* <<< THIS IS THE UPDATED LINE */
     color: var(--light-grey);
     padding: 5rem 2rem;
     text-align: center;
