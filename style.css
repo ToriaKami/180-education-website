@@ -494,11 +494,11 @@ footer p {
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--primary-color); /* <<< THIS IS THE UPDATED LINE */
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 12px;
-    text-align: center; /* <<< THIS LINE IS UPDATED */
+    text-align: center;
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
