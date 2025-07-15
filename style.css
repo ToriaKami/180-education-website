@@ -580,3 +580,68 @@ footer p {
         gap: 2rem;
     }
 }
+/* --- FAQ Section --- */
+.faq-section {
+    padding: 5rem 2rem;
+    background-color: #ffffff; /* A clean white background */
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    text-align: left;
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-grey);
+}
+
+.faq-toggle {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0; /* This is the key to our animation: hidden by default */
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease;
+    padding: 0 1rem;
+}
+
+.faq-answer p {
+    line-height: 1.7;
+    padding-bottom: 1.5rem;
+}
+
+/* --- Active state for the accordion --- */
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Animate to this height when active. Adjust if answers are very long */
+    padding: 0 1rem;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg); /* Rotates the "+" into an "x" */
+}
