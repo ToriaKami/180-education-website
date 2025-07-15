@@ -751,7 +751,7 @@ footer {
 
 /* --- Final CTA Section --- */
 .final-cta {
-    background-color: var(--dark-grey); /* Using the dark grey from the footer for a smooth transition */
+    background-color: var(--primary-color); /* <<< THIS IS THE UPDATED LINE */
     color: var(--white-color);
     padding: 5rem 2rem;
     text-align: center;
